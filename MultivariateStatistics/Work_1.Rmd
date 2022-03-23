@@ -1,0 +1,65 @@
+---
+title: "Heart dataset descriptive analysis"
+author: "Julián Alejandro Úsuga Ortiz"
+date: "3/23/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## Library Loading
+```{r}
+library(catdata)
+library(RColorBrewer)
+```
+## Data loading:
+```{r}
+data(heart)
+```
+## Data transformation:
+```{r}
+# Convert from matrix to data frame
+df <- as.data.frame(heart)
+```
+```{r}
+# All of the variables are "num" class so i will transform them into their right class
+# str(df)
+df$y <- as.factor(df$y)
+df$famhist <- as.factor(df$famhist)
+str(df)
+```
+## What is this data about?
+Sample of males in a high-risk heart-disease region of Western Cape, South Africa. This study contains 10 variables which are the following:
+**age**: Age at onset of the study (Discrete Ordinal)
+**alcohol**: Alcohol consumption (Continuous)
+**tobacco**: Cumulative tobacco consumption (Continuous)
+**obesity**: Obesity (Continuous)
+**typea**: Type-A behavior (Discrete)
+**famhist**: Family history of heart disease (Binary, 1:Yes, 0:No)
+**adiposity**: Adiposity / Fat gain (Continuous)
+**ldl**: Low density lipoprotein cholesterol (Continuous)
+**sbp**: Systolic blood pressure (Continuous)
+**y**: Has coronary heart disease? (Binary, 1:Yes, 0:No)
+## Data Exploration
+```{r, echo=FALSE}
+# Data head
+head(df)
+```
+```{r, echo=FALSE}
+# Data tail
+tail(df)
+```
+### Age vs Alcohol and Tobacco consumption
+I suspect that there will be a positive relation between the age and this two variables so i will plot them to confirm
+Points in red mean people that has the disease
+```{r}
+par(mfrow = c(1,2))
+plot(df$age, df$alcohol, pch = 16, col = ifelse(df$y == "1",'red',3), xlab = "Age", ylab = "Alcohol Consumption")
+plot(df$age, df$tobacco, pch = 16, col = ifelse(df$y == "1",'red',3), xlab = "Age", ylab = "Tobacco Consumption")
+```
+```{r}
+lev <- as.factor(round(df$tobacco, -1))
+t <- xtabs( ~ as.factor(round(tobacco, -1)) + y, data = df)
+barplot(prop.table(t, 2), legend=levels(lev), col = brewer.pal(5, "Set2"), xlab = "Has coronary disease", ylab ="Percentage of group")
+```
