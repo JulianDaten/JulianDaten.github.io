@@ -1,0 +1,10 @@
+---
+title: "Personal Blog"
+author: "Julián Úsuga"
+format: html
+editor: visual
+---
+
+## My projects
+
+- Real Estate Apartment price prediction.
