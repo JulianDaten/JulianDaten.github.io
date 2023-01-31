@@ -1,10 +1,14 @@
 ---
-title: "Personal Blog"
-author: "Julián Úsuga"
-format: html
-editor: visual
+title: "Julián Úsuga Website"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
 ---
 
-## My projects
 
-- Real Estate Apartment price prediction.
