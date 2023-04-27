@@ -1,17 +1,17 @@
 [
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "CV",
+    "objectID": "about_me.html",
+    "href": "about_me.html",
+    "title": "About Me",
     "section": "",
     "text": "Hi, my name is Julián Úsuga Ortiz!\nI’m an Statistician interested in Machine Learning, Web Scraping, Business Intelligence"
   },
   {
-    "objectID": "cv.html#my-projects",
-    "href": "cv.html#my-projects",
-    "title": "CV",
+    "objectID": "about_me.html#my-projects",
+    "href": "about_me.html#my-projects",
+    "title": "About Me",
     "section": "My Projects",
-    "text": "My Projects\n\nReal Estate Apartments Dashboard\nPrice Tracker"
+    "text": "My Projects\nReal Estate Apartments Dashboard\nFood Price Tracker"
   },
   {
     "objectID": "index.html",
