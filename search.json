@@ -4,7 +4,7 @@
     "href": "about_me.html",
     "title": "About Me",
     "section": "",
-    "text": "Hi, my name is Julián Úsuga Ortiz!\nI’m an Statistician interested in Machine Learning, Web Scraping, Business Intelligence"
+    "text": "Hi, my name is Julián Úsuga Ortiz!\nI’m an Statistician interested in Machine Learning, Automatization, Business Intelligence"
   },
   {
     "objectID": "about_me.html#my-projects",
@@ -18,21 +18,21 @@
     "href": "index.html",
     "title": "Julián Úsuga Website",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJan 31, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJan 28, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Speed in Relational DB Management Systems\n\n\n\n\n\n\n\nexperiment\n\n\ndbms\n\n\nsql\n\n\n\n\n\n\n\n\n\n\n\nNov 24, 2022\n\n\nJulián Úsuga\n\n\n\n\n\n\n  \n\n\n\n\nModeling Survival times in African countries using rstanarm\n\n\n\n\n\n\n\nsurvival analysis\n\n\nrstanarm\n\n\nbayesian approach\n\n\n\n\n\n\n\n\n\n\n\nSep 1, 2022\n\n\nJulián Úsuga\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "posts/dbms_speed/index.html",
+    "href": "posts/dbms_speed/index.html",
+    "title": "Speed in Relational DB Management Systems",
     "section": "",
-    "text": "This is a post with executable code."
+    "text": "We often get confused when we don’t know which databases to use.\nIn this study I compared the speed of processing of three of the most popular DBMS (SQLite, MySQL, PostgreSQL).\nIn this work I used and model with multiple factors: DBMS, Computer in which the experiment was performed, Query and Portions of the Data.\nI found that DBMS PostgreSQL and SQLite handle text data faster than MySQL.\nA more detailed description of my study in the next presentation:"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/survival_dhs/index.html",
+    "href": "posts/survival_dhs/index.html",
+    "title": "Modeling Survival times in African countries using rstanarm",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "In this study we used a Bayesian Approach to model survival times of the people in different African countries.\nFirstly we collected and cleaned the data from the format provided by the Demographic and Health Surveys (DHS).\nWe used R and the package rstanarm to create the models.\nMore info about the study in the poster presented:"
   },
   {
     "objectID": "price_goods.html",
